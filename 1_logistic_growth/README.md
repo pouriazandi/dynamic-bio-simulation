@@ -27,8 +27,8 @@ Where:
 
 ## 📊 Example Output
 When executed, the script prints:
-Estimated r = 0.598
-Estimated K = 1.205
+- Estimated r = 0.598
+- Estimated K = 1.205
 
 
 and generates a plot comparing:
