@@ -1,5 +1,13 @@
 # Logistic Growth Model
 
-This folder contains a simple ODE-based model for microbial growth.
-The model follows the logistic equation and demonstrates parameter estimation
-using Python (NumPy, SciPy, Matplotlib).
+This folder contains a simple ODE-based model for microbial/cell growth.
+The model:
+- defines a logistic differential equation,
+- generates synthetic experimental data,
+- fits model parameters using least-squares,
+- and visualizes the results.
+
+To run:
+```bash
+pip install numpy scipy matplotlib
+python logistic_model.py
