@@ -1,10 +1,19 @@
-# Dynamic Modeling Examples (Python)
+# Dynamic Modeling of Biological Systems (Python)
 
-This repository contains a small collection of dynamic (ODE-based) models implemented in Python.
+This repository contains three small examples of ODE-based (dynamic) models implemented in Python.
 
 ## Contents
-1. `1_logistic_growth/` – Logistic growth with parameter estimation  
-2. `2_infection_dynamics/` – Simple host–pathogen interaction model  
-3. `3_enzyme_kinetics/` – Enzyme kinetics based on E+S <-> ES -> E+P
+1. **1_logistic_growth/** – logistic growth of a population (with parameter estimation)
+2. **2_infection_dynamics/** – simple host–pathogen / infection dynamics model
+3. **3_enzyme_kinetics/** – enzyme reaction kinetics (E + S <-> ES -> E + P)
 
-These examples were developed as part of my preparation for research in computational biology (MBG-CSIC, Pontevedra).
+All examples use:
+- Python 3.x
+- NumPy
+- SciPy (`solve_ivp`)
+- Matplotlib
+
+## How to run
+```bash
+pip install numpy scipy matplotlib
+python <script_name>.py
