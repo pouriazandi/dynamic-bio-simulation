@@ -1,13 +1,30 @@
-# Logistic Growth Model
+# 🧠 Logistic Growth Model
 
-This folder contains a simple ODE-based model for microbial/cell growth.
-The model:
-- defines a logistic differential equation,
-- generates synthetic experimental data,
-- fits model parameters using least-squares,
-- and visualizes the results.
+This example demonstrates a simple **dynamic model of microbial growth**, following the classical *logistic equation*.
 
-To run:
-```bash
-pip install numpy scipy matplotlib
-python logistic_model.py
+---
+
+## 📘 Overview
+The model describes how a population grows rapidly at first and then slows down as it reaches a **carrying capacity (K)** due to limited resources.
+
+\[
+\frac{dX}{dt} = r \cdot X \cdot \left(1 - \frac{X}{K}\right)
+\]
+
+Where:  
+- **X** = population or biomass  
+- **r** = growth rate  
+- **K** = carrying capacity  
+
+---
+
+## ⚙️ Implementation
+- Synthetic experimental data are generated with small random noise.  
+- Model parameters (**r**, **K**) are estimated using the **least-squares optimization** method (`scipy.optimize.least_squares`).  
+- The fitted model is compared against the original “true” model to evaluate accuracy.
+
+---
+
+## 📊 Example Output
+When executed, the script prints:
+
