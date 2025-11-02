@@ -27,4 +27,20 @@ Where:
 
 ## 📊 Example Output
 When executed, the script prints:
+Estimated r = 0.598
+Estimated K = 1.205
+
+
+and generates a plot comparing:
+- Experimental (noisy) data  
+- Fitted model  
+- True model (reference)
+
+---
+
+## ▶️ How to Run
+```bash
+pip install numpy scipy matplotlib
+python logistic_model.py
+
 
